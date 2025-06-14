@@ -342,3 +342,112 @@
             font-size: 0.9rem;
             color: #3c070794;
         }
+    @media (max-width: 992px) {
+         .classitem.grid-3x5 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 700px) {
+        .classitem.grid-3x5 {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .item img {
+            width: 100%;
+            height: auto;
+            max-width: 240px;
+        }
+    }
+@media (max-width: 992px) {
+    .sanpham {
+        flex-direction: column;
+        gap: 0;
+    }
+    .menu1 {
+        border-right: none;
+        border-bottom: 1px solid brown;
+        padding-bottom: 20px;
+        padding-right: 0;
+        min-width: unset;
+        justify-content: center;
+        width: 100%;
+    }
+    .spne {
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 0;
+    }
+    .logo {
+        font-size: 2rem;
+        margin-bottom: 0;
+        padding-left: 10px;
+    }
+    .menu {
+        margin-top: 8px;
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .menu ul li {
+        margin: 5px 0;
+    }
+}
+@media (max-width: 700px) {
+    .hero {
+        height: 38vh;
+        min-height: 250px;
+    }
+    .hero-content {
+        padding: 0 4px;
+    }
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 600px) {
+    .footer-container {
+        gap: 18px;
+    }
+    .footer-col h3 {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 0 2px;
+        gap: 8px;
+    }
+    .logo {
+        font-size: 1.2rem;
+        gap: 5px;
+    }
+    .item img {
+        max-width: 120px;
+    }
+    .hero h1 {
+        font-size: 1.4rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
+.danh_sach {
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.danh_sach::-webkit-scrollbar {
+    display: none;
+}
