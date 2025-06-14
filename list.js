@@ -388,6 +388,10 @@ function show(i) {
             div.appendChild(img);
             div.appendChild(ul);
 
+            div.addEventListener("click", function(){
+                window.location.href="Form_Ticket.html"
+            });
+
             classitem.appendChild(div);
         }
     }

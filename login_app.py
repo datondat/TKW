@@ -54,55 +54,6 @@ def handle_login():
         messagebox.showerror("Lỗi", "Sai tên đăng nhập hoặc mật khẩu.")
 
 # ==== Giao diện chính ====
-root = tk.Tk()
-root.title("Đăng nhập")
-root.geometry("360x640")
-root.resizable(False, False)
-root.configure(bg="#87CEEB")  # nền xanh trời
-
-# ==== Frame đăng nhập ====
-login_frame = tk.Frame(root, bg="#ffffff", bd=0)
-login_frame.place(relx=0.5, rely=0.5, anchor="center")
-
-tk.Label(login_frame, text="🌤️ Weather App", font=("Segoe UI", 20, "bold"), bg="#ffffff", fg="#007aff").pack(pady=20)
-tk.Label(login_frame, text="ĐĂNG NHẬP", font=("Segoe UI", 14, "bold"), bg="#ffffff").pack(pady=(0, 10))
-
-tk.Label(login_frame, text="Tên đăng nhập", bg="#ffffff").pack()
-login_username = tk.Entry(login_frame, width=30)
-login_username.pack(pady=5)
-
-tk.Label(login_frame, text="Mật khẩu", bg="#ffffff").pack()
-login_password = tk.Entry(login_frame, show="*", width=30)
-login_password.pack(pady=5)
-
-tk.Button(login_frame, text="Đăng nhập", command=handle_login,
-          bg="#007aff", fg="white", font=("Segoe UI", 12), width=20).pack(pady=15)
-
-tk.Label(login_frame, text="Chưa có tài khoản?", bg="#ffffff").pack()
-tk.Button(login_frame, text="Đăng ký", command=switch_to_register,
-          font=("Segoe UI", 10), bg="#ffffff", fg="#007aff", bd=0).pack()
-
-# ==== Frame đăng ký ====
-register_frame = tk.Frame(root, bg="#ffffff", bd=0)
-
-tk.Label(register_frame, text="🌤️ Weather App", font=("Segoe UI", 20, "bold"), bg="#ffffff", fg="#007aff").pack(pady=20)
-tk.Label(register_frame, text="ĐĂNG KÝ", font=("Segoe UI", 14, "bold"), bg="#ffffff").pack(pady=(0, 10))
-
-tk.Label(register_frame, text="Tên đăng nhập", bg="#ffffff").pack()
-reg_username = tk.Entry(register_frame, width=30)
-reg_username.pack(pady=5)
-
-tk.Label(register_frame, text="Mật khẩu", bg="#ffffff").pack()
-reg_password = tk.Entry(register_frame, show="*", width=30)
-reg_password.pack(pady=5)
-
-tk.Button(register_frame, text="Đăng ký", command=handle_register,
-          bg="#007aff", fg="white", font=("Segoe UI", 12), width=20).pack(pady=15)
-
-tk.Label(register_frame, text="Đã có tài khoản?", bg="#ffffff").pack()
-tk.Button(register_frame, text="Quay lại đăng nhập", command=switch_to_login,
-          font=("Segoe UI", 10), bg="#ffffff", fg="#007aff", bd=0).pack()
-
 # Khởi động với màn hình đăng nhập
 login_frame.pack()
 

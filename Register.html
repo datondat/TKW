@@ -67,57 +67,65 @@
 </div>
 
 <div class="container-box">
-    <form id="loginForm" method="POST" action="/login" class="needs-validation form-section active" novalidate>
-        <h4 class="mb-3 text-primary animate__animated animate__fadeInDown">🔐 Login</h4>
+    <form id="loginForm" action="trang_chu.html" class="needs-validation form-section active" >
+        <h4 class="mb-3 text-primary animate__animated animate__fadeInDown">🔐 Đăng nhập</h4>
 
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="login_email" name="email" placeholder="Email" required>
-            <label for="login_email"><i class="bi bi-envelope"></i> Email</label>
+            <label for="login_email"><i class="bi bi-envelope"></i> Email</label >
+             <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
         </div>
 
         <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="login_password" name="password" placeholder="Password" required>
-            <label for="login_password"><i class="bi bi-lock"></i> Password</label>
+            <input type="password" class="form-control" id="login_password" name="password" placeholder="Mật khẩu" required>
+            <label for="login_password"><i class="bi bi-lock"></i> Mật khẩu</label>
+             <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
         </div>
 
         <div class="d-grid">
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary" >Đăng nhập</button>
         </div>
 
         <div class="text-center switch-btn">
-            <button type="button" class="btn btn-link" id="switchToRegister">Don't have an account? Register</button>
+            <button type="button" class="btn btn-link" id="switchToRegister">Bạn chưa có tài khoản? Đăng kí!</button>
         </div>
     </form>
 
-    <form id="registerForm" method="POST" action="/register" class="needs-validation form-section" novalidate>
-        <h4 class="mb-3 text-success animate__animated animate__fadeInDown">📝 Register</h4>
+    <form id="registerForm" action="trang_chu.html" class="needs-validation form-section" >
+        <h4 class="mb-3 text-success animate__animated animate__fadeInDown">📝 Đăng kí</h4>
 
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="register_name" name="name" placeholder="Full Name" required>
-            <label for="register_name"><i class="bi bi-person"></i> Full Name</label>
+            <input type="text" class="form-control" id="register_name" name="name" placeholder="Họ và tên" required>
+            <label for="register_name"><i class="bi bi-person"></i> Họ và tên</label>
+             <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
         </div>
 
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="register_email" name="email" placeholder="Email" required>
             <label for="register_email"><i class="bi bi-envelope"></i> Email</label>
+             <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
         </div>
 
         <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="register_password" name="password" placeholder="Password" required>
-            <label for="register_password"><i class="bi bi-lock"></i> Password</label>
+            <input type="password" class="form-control" id="register_password" name="password" placeholder="Mật khẩu" required>
+            <label for="register_password"><i class="bi bi-lock"></i> Mật khẩu</label>
         </div>
 
         <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
-            <label for="confirm_password"><i class="bi bi-lock-fill"></i> Confirm Password</label>
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Xác nhận mật khẩu" required>
+            <label for="confirm_password"><i class="bi bi-lock-fill"></i> Xác nhận mật khẩu</label>
         </div>
 
         <div class="d-grid">
-            <button type="submit" class="btn btn-success">Register</button>
+            <button type="submit" class="btn btn-success" >Đăng kí</button>
         </div>
 
         <div class="text-center switch-btn">
-            <button type="button" class="btn btn-link" id="switchToLogin">Already have an account? Login</button>
+            <button type="button" class="btn btn-link" id="switchToLogin">Đã có tài khoản? Đăng nhập!</button>
         </div>
     </form>
 </div>
